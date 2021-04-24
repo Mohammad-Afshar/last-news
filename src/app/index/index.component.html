@@ -1,0 +1,113 @@
+
+<div class="container-fluid">
+
+
+  <div class="row " *ngIf="snip">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 timer">
+     
+
+      <img src="../../assets/img/Rhombus.gif">
+      
+    </div>
+  </div>
+</div>
+ <app-header *ngIf="header"></app-header> 
+
+<div class="container" *ngFor="let post of postsArray">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 leftrow">
+      <swiper [config]="config">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[0].urlToImage }}"
+              onerror="this.src='../../assets/img/news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[0].title.slice(0, 80) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[1].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[1].title.slice(0, 80) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[2].urlToImage }}"
+              onerror="this.src='../../assets/img/news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[2].title.slice(0, 80) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[3].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[3].title.slice(0, 80) }} ...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </swiper>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 rightrow">
+      <div class="row top">
+        
+
+          <img
+            src="{{ post.articles[4].urlToImage }}" 
+            onerror="this.src='../../assets/img/news.jpg'"
+          /> 
+        
+         <div class="card-img-overlay title">
+          <p>{{ post.articles[4].title.slice(0, 55) }} ...</p>
+        </div>
+
+      </div>
+      <div class="row bottom">
+        <img
+          src="{{ post.articles[5].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+        />
+        <div class="card-img-overlay title">
+          <p>{{ post.articles[5].title.slice(0, 30) }} ...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+</div>
+
+<!-- sport -->
+<app-sport *ngIf="footer"></app-sport>
+<!-- end sport -->
+
+<!-- covid -->
+<app-covid19 *ngIf="footer"></app-covid19>
+<!-- end covid -->  
+
+<!-- galery -->
+<app-galeryimg *ngIf="footer"></app-galeryimg>
+<!-- end galery --> 
+
+<app-footer *ngIf="footer"></app-footer>
+ 

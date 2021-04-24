@@ -1,0 +1,141 @@
+
+<app-header></app-header>
+<div class="container" *ngFor="let post of healthArray">
+  <div class="row onerow" >
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[0].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[0].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[0].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[0].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[1].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[1].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[1].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[1].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[2].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[2].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[2].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[2].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="row onerow" >
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[3].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[3].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[3].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[3].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[4].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[4].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[4].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[4].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="container2">
+        <img
+          src="{{ post.articles[5].urlToImage }}"
+          onerror="this.src='../../assets/img/onerooe/health.jpg'"
+          alt="Loading..."
+          class="image"
+        />
+        <div class="overlay">
+          <div class="text">
+            {{ post.articles[5].title }}<br /><br />
+            <fa-icon [icon]="faClock"></fa-icon>
+            {{ post.articles[5].publishedAt.slice(11, 19) }}<br />
+            <fa-icon [icon]="faUser"></fa-icon>
+            {{ post.articles[5].source.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- end onerow -->
+<app-covid19></app-covid19>
+
+<app-comment></app-comment>
+
+<app-linkmenu></app-linkmenu>
+
+
+
+</div>
+<app-footer></app-footer>

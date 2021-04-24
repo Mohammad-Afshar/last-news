@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+
+.onerow{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Merienda", cursive;
+}
+
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);opacity:0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.75s ease;
+}
+
+.container2:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+padding: 10px;
+  top: 25%;
+
+  text-align: left;
+  
+  
+}
+
+
+// *********************
+
+
+
+
+
+.tworow{
+  img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+  }
+}

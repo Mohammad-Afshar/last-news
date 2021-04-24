@@ -1,0 +1,145 @@
+<div class="container">
+  <div class="container">
+    
+ 
+  <div class="row covid">
+    <fa-icon [icon]="faVirus" class="icon"></fa-icon>
+    <span> COVID-19 </span>
+  </div>
+
+  <div class="row" *ngFor="let post of coidArray">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="row contry">
+
+        <img src="../../assets/img/iran.png" >
+        <p>{{ post[19].country }}</p>
+      </div>
+      <div class="nemodar">
+        <div class="container">
+          <div class="record">
+            <div class="p"><span>Country population : 83,992,949</span></div>
+          </div>
+          <div class="record">
+            <div class="p bg-danger">
+              <span>infected : {{ post[19].infected | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-success">
+              <span>recovered : {{ post[19].recovered | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-dark">
+              <span style="color: white;">deceased : {{ post[19].deceased | number }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="row contry">
+
+        <img src="../../assets/img/united-states.png" >
+        <p>{{ post[46].country }}</p>
+      </div>
+      <div class="nemodar">
+        <div class="container">
+          <div class="record">
+            <div class="p"><span>Country population : 331,002,651</span></div>
+          </div>
+          <div class="record">
+            <div class="p bg-danger">
+              <span>infected : {{ post[46].infected | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-success">
+              <span>recovered : {{ post[46].recovered | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-dark">
+              <span style="color: white;">deceased : {{ post[46].deceased | number }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="row contry">
+
+        <img src="../../assets/img/italy.png" >
+        <p>{{ post[20].country }}</p>
+      </div>
+      <div class="nemodar">
+        <div class="container">
+          <div class="record">
+            <div class="p"><span>Country population :	60,461,826</span></div>
+          </div>
+          <div class="record">
+            <div class="p bg-danger">
+              <span>infected : {{ post[20].infected | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-success">
+              <span>recovered : {{ post[20].recovered | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-dark">
+              <span style="color: white;">deceased : {{ post[20].deceased | number }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="row contry">
+
+        <img src="../../assets/img/china.png" >
+        <p>{{ post[8].country }}</p>
+      </div>
+      <div class="nemodar">
+        <div class="container">
+          <div class="record">
+            <div class="p"><span>Country population:1,439323776</span></div>
+          </div>
+          <div class="record">
+            <div class="p bg-danger">
+              <span>infected : {{ post[8].infected | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-success">
+              <span>recovered : {{ post[8].recovered | number }}</span>
+            </div>
+          </div>
+          <div class="record">
+            <div class="p bg-dark">
+              <span style="color: white;">deceased : {{ post[8].deceased | number }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row lastupdate">
+     <p>
+      (  Last Update :  {{ post[0].lastUpdatedApify.slice(0,10)}}
+      / {{ post[0].lastUpdatedApify.slice(12,19)}}  ))
+     </p> 
+      
+    </div>
+
+
+  </div>
+
+
+ 
+</div>
+</div>

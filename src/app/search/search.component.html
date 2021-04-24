@@ -1,0 +1,77 @@
+
+
+<div class="container-fluid" *ngIf="searchactive">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+
+        <input type="text" spellcheck="false" ngModel name="searchValue"  #txt>
+        <button type="submit">
+            <fa-icon [icon]="faSearch"></fa-icon>
+        </button>
+        
+    </form>
+    <div class="alert nosearch" role="alert" *ngIf="noresult">
+        No results found,
+        Please try again.
+    </div>
+</div>
+<div class="container" *ngFor="let post of searchArray">
+    <div class="row textSearch">
+        search :  <span>  {{ textsearh }} </span>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+            <img src="{{ post.articles[0].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[0].title }}</h4>
+            <p>{{ post.articles[0].content }}</p>
+        </div>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[1].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[1].title }}</h4>
+            <p>{{ post.articles[1].content }}</p>
+        </div>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[2].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[2].title }}</h4>
+            <p>{{ post.articles[2].content }}</p>
+        </div>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[3].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[3].title }}</h4>
+            <p>{{ post.articles[3].content }}</p>
+        </div>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[4].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[4].title }}</h4>
+            <p>{{ post.articles[4].content }}</p>
+        </div>
+    </div>
+    <div class="row search">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[5].urlToImage }}" onerror="this.src='../../assets/img/search.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[5].title }}</h4>
+            <p>{{ post.articles[5].content }}</p>
+        </div>
+    </div>
+</div>
+<app-linkmenu *ngIf="linkActive" ></app-linkmenu>
+<app-footer *ngIf="footer" ></app-footer>

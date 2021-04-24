@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.covid {
+  margin-bottom: 10px;
+}
+.icon {
+  margin-right: 5px;
+  color: red;
+  font-size: 25px;
+}
+
+span {
+  @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+  font-family: "Patrick Hand", cursive;
+  font-size: 25px;
+  color: red;
+}
+.contry {
+  margin-bottom: 10px;
+  font-family: "Caveat", cursive;
+  img {
+    margin-right: 5px;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+.lastupdate {
+  font-family: "Caveat", cursive;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+// *********************
+
+// **********************
+.nemodar {
+  .container {
+    width: 100%;
+    font-family: Tahoma;
+    float: right;
+  }
+
+  .record {
+    float: right;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    margin-bottom: 2px;
+  }
+
+  .p {
+    padding-top: 3px;
+    float: left;
+    clear: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    background-color: cadetblue;
+  }
+
+  .p span {
+    font-size: 10px;
+    float: left;
+    font-weight: bold;
+    color: black;
+    font-family: "Varela Round", sans-serif;
+    
+  }
+}

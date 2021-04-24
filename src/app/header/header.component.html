@@ -1,0 +1,38 @@
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger"  *ngIf="showsnip">
+        <a class="navbar-brand logo">
+            <span>Last</span> 
+             <img src="../../assets/img/journalis.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item  navFont"   >
+              <a class="nav-link " [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navFont">
+              <a class="nav-link " [routerLink]="['/business']" routerLinkActive="active">Business <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navFont">
+              <a class="nav-link" [routerLink]="['/health']" routerLinkActive="active">Health <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navFont">
+              <a class="nav-link" [routerLink]="['/technology']" routerLinkActive="active">Technology <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item navFont">
+              <a class="nav-link" [routerLink]="['/entertainment']" routerLinkActive="active">Entertainment</a>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            
+            <button [routerLink]="['/search']" class="btn bg-light my-2 my-sm-0" >Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+

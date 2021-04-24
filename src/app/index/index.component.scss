@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+.timer{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.container {
+  margin-top: 20px;
+  
+  overflow: hidden !important;
+ 
+  font-family: "Merienda", cursive;
+}
+
+.leftrow {
+  height: 505px;
+  
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    p {
+      border-radius: 10px;
+      background-color: rgb(46, 45, 45);
+      color: rgb(255, 255, 255);
+
+      font-size: 25px;
+      text-align: center;
+      
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
+
+.rightrow {
+  
+  .top {
+    height: 300px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      border-radius: 10px;
+      background-color: rgb(46, 45, 45);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+.bottom {
+  margin-top: 5px;
+  
+  height: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    p {
+      border-radius: 10px;
+      background-color: rgb(46, 45, 45);
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  &:hover {
+   
+    opacity: 0.5;
+  }
+}
+
+swiper {
+  height: 100%;
+  width: 100%;
+}
+

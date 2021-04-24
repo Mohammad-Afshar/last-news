@@ -1,0 +1,102 @@
+<div class="row d-flex justify-content-center mt-100 mb-100" *ngFor="let post of healthArray">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="comment-widgets">
+                <!-- Comment Row -->
+                <div class="card-body text-center">
+                    <h4 class="card-title">Latest Comments</h4>
+                </div>
+    
+                <div class="d-flex flex-row comment-row m-t-0">
+                    <div class="p-2"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="comment-text w-100">
+                        <h6 class="font-medium">James Thomas</h6> <span class="m-b-15 d-block">This is awesome website. I would love to comeback again. </span>
+                        <div class="comment-footer"> <span class="text-muted float-right">April 14, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                    </div>
+                </div> <!-- Comment Row -->
+                <div class="d-flex flex-row comment-row">
+                    <div class="p-2"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="comment-text active w-100">
+                        <h6 class="font-medium">Michael Hussey</h6> <span class="m-b-15 d-block">Thanks bbbootstrap.com for providing such useful snippets. </span>
+                        <div class="comment-footer"> <span class="text-muted float-right">May 10, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                    </div>
+                </div> <!-- Comment Row -->
+                <div class="d-flex flex-row comment-row">
+                    <div class="p-2"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" alt="user" width="50" class="rounded-circle"></div>
+                    <div class="comment-text w-100">
+                        <h6 class="font-medium">Johnathan Doeting</h6> <span class="m-b-15 d-block">Great industry leaders are not the real heroes of stock market. </span>
+                        <div class="comment-footer"> <span class="text-muted float-right">August 1, 2019</span> <button type="button" class="btn btn-cyan btn-sm">Edit</button> <button type="button" class="btn btn-success btn-sm">Publish</button> <button type="button" class="btn btn-danger btn-sm">Delete</button> </div>
+                    </div>
+                </div>
+            </div> <!-- Card -->
+        </div>
+    </div>
+    <div class="col-lg-4 leftrow">
+      <swiper [config]="config">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[0].urlToImage }}"
+              onerror="this.src='../../assets/img/news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[0].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[1].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[1].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[2].urlToImage }}"
+              onerror="this.src='../../assets/img/news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[2].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[3].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[3].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[4].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[4].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{{ post.articles[5].urlToImage }}"
+              onerror="this.src='../../assets/img/onerooe/index-news.jpg'"
+            />
+            <div class="card-img-overlay title">
+              <p>{{ post.articles[5].title.slice(0, 50) }} ...</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </swiper>
+    </div>
+  
+</div>

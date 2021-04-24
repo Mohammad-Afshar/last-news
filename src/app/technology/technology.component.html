@@ -1,0 +1,60 @@
+
+<app-header></app-header>
+<div class="container onerow" *ngFor="let post of technologyArray">
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[0].urlToImage }}" onerror="this.src='../../assets/img/onerooe/technology.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+           <h4>{{ post.articles[0].title }}</h4>
+           <p>{{ post.articles[0].description }}</p>
+        </div>
+    </div>
+    <!-- end onerow -->
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[1].title }}</h4>
+           <p>{{ post.articles[1].description }}</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            
+            <img src="{{ post.articles[1].urlToImage }}" onerror="this.src='../../assets/img/onerooe/technology.jpg'">
+        </div>
+    </div>
+    <!-- end tworow -->
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[2].urlToImage }}" onerror="this.src='../../assets/img/onerooe/technology.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+           <h4>{{ post.articles[2].title }}</h4>
+           <p>{{ post.articles[2].description }}</p>
+        </div>
+    </div>
+    <!-- end threerow -->
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+            <h4>{{ post.articles[3].title }}</h4>
+           <p>{{ post.articles[3].description }}</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[3].urlToImage }}" onerror="this.src='../../assets/img/onerooe/technology.jpg'">
+           
+        </div>
+    </div>
+    <!-- end fourrow -->
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <img src="{{ post.articles[4].urlToImage }}" onerror="this.src='../../assets/img/onerooe/technology.jpg'">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title">
+           <h4>{{ post.articles[4].title }}</h4>
+           <p>{{ post.articles[4].description }}</p>
+        </div>
+    </div>
+    <!-- end fiverow -->
+    <app-galeryimg></app-galeryimg>
+    <app-linkmenu></app-linkmenu>
+</div>
+
+<app-footer></app-footer>

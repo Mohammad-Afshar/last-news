@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    .logo{
+              
+            font-family: 'Pacifico', cursive;
+
+            span{
+                margin-right: -10px;
+                font-size: 30px;
+                vertical-align: -10px;
+                color: white;
+            }
+            img{
+                margin-right: 80px;
+                height: 50px;
+            };
+        
+        
+    }
+    // end logo
+    
+.navFont{
+    font-family: 'Courgette', cursive;
+       a{
+        font-size: 20px;
+        // font-weight: bold;
+        color: white;
+        
+    }
+}
+

@@ -1,0 +1,131 @@
+<div class="container">
+  <div class="row search" *ngFor="let post of sportArray">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 lefttop">
+      <fa-icon [icon]="faRunning" class="red"></fa-icon>
+      <span class="red"> SPORTS</span>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 shrink">
+          <img
+            src="{{ post.articles[0].urlToImage }}"
+            onerror="this.src='../../assets/img/onerooe/sport.jpg'"
+          />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p>{{ post.articles[0].title.slice(0, 100) }}</p>
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span> {{ post.articles[0].publishedAt }}</span
+          ><br />
+          <fa-icon [icon]="faUser"></fa-icon>
+          <span> {{ post.articles[0].source.name }}</span>
+        </div>
+      </div>
+      <div class="row sport">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <img
+            src="{{ post.articles[1].urlToImage }}"
+            onerror="this.src='../../assets/img/onerooe/sport2.jpg'"
+          />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <p>{{ post.articles[1].title.slice(0, 80) }}</p>
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span> {{ post.articles[0].publishedAt }}</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <img
+            src="{{ post.articles[2].urlToImage }}"
+            onerror="this.src='../../assets/img/onerooe/sport.jpg'"
+          />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <p>{{ post.articles[2].title.slice(0, 80) }}</p>
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span> {{ post.articles[0].publishedAt }}</span>
+        </div>
+      </div>
+      <div class="row sport">
+        <div
+          class="col-lg-3 col-md-3 col-sm-3 col-xs-12"
+          style="margin-bottom: 30px"
+        >
+          <img
+            src="{{ post.articles[4].urlToImage }}"
+            onerror="this.src='../../assets/img/onerooe/sport2.jpg'"
+          />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <p>{{ post.articles[4].title.slice(0, 80) }}</p>
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span> {{ post.articles[0].publishedAt }}</span>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <img
+            src="{{ post.articles[5].urlToImage }}"
+            onerror="this.src='../../assets/img/onerooe/sport2.jpg'"
+          />
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <p>{{ post.articles[5].title.slice(0, 80) }}</p>
+          <fa-icon [icon]="faClock"></fa-icon>
+          <span> {{ post.articles[0].publishedAt }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 category">
+      <div class="container2">
+        <a [routerLink]="['/business']">
+          <img src="../../assets/img/onerooe/busuiness.jpg" alt="" />
+        </a>
+        <div class="text-block">
+          <a [routerLink]="['/business']">
+            <p>Business</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="container2">
+        <a [routerLink]="['/health']">
+          <img src="../../assets/img/onerooe/health.jpg" alt="" />
+        </a>
+        <div class="text-block">
+          <a [routerLink]="['/health']">
+            <p>Health</p>
+          </a>
+        </div>
+      </div>
+      <div class="container2">
+        <a [routerLink]="['/technology']">
+          <img src="../../assets/img/onerooe/technology.jpg" alt="" />
+        </a>
+        <div class="text-block">
+          <a [routerLink]="['/technology']">
+            <p>Technology</p>
+          </a>
+        </div>
+      </div>
+      <div class="container2">
+        <a [routerLink]="['/entertainment']">
+          <img src="../../assets/img/onerooe/entertainment.jpg" alt="" />
+        </a>
+        <div class="text-block">
+          <a [routerLink]="['/entertainment']">
+            <p>Entertainment</p>
+          </a>
+        </div>
+      </div>
+      <div class="container2">
+        <a [routerLink]="['/sport']">
+          <img src="../../assets/img/onerooe/sport2.jpg" alt="" />
+        </a>
+        <div class="text-block">
+          <a [routerLink]="['/sport']">
+            <p>Sport</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ****************************** -->

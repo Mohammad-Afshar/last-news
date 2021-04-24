@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.search {
+  margin-top: 20px;
+  .category {
+    margin-top: 45px;
+    height: 500px;
+
+    img {
+      width: 100%;
+      height: 90px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      filter: brightness(60%);
+      // &:hover {
+      //   transition: 0.5s;
+      //   transform: scale(1.1);
+      //   cursor: pointer;
+      // }
+    }
+  }
+
+  .lefttop {
+    .shrink {
+      transition: 1s ease;
+      img {
+        &:hover {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+          transition: 1s ease;
+        }
+      }
+    }
+    .red {
+      color: red;
+      @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+      font-family: "Patrick Hand", cursive;
+      font-size: 25px;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+    }
+
+    p {
+      font-family: "Zilla Slab Highlight", cursive;
+      text-align: left;
+
+      font-size: 22px;
+    }
+    span {
+      color: gray;
+
+      font-family: "Secular One", sans-serif;
+      font-size: 12px;
+    }
+    fa-icon {
+      color: gray;
+    }
+  }
+  .sport {
+    margin-top: 20px;
+    img {
+      width: 100% !important;
+      height: 150px;
+      border-radius: 5px;
+
+      opacity: 1 !important;
+      transition: 1s ease !important;
+      &:hover {
+        opacity: 0.6 !important;
+        transition: 1s ease !important;
+      }
+    }
+    p {
+      text-align: left;
+      font-family: "Kalam", cursive;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    fa-icon,
+    span {
+      color: gray;
+      font-family: "Secular One", sans-serif;
+      font-size: 12px;
+    }
+  }
+}
+
+.fadein img {
+  opacity: 0.5;
+  transition: 1s ease;
+}
+
+.fadein img:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.container2 {
+  position: relative;
+  font-family: "Patrick Hand", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .text-block {
+    position: absolute;
+
+    color: white;
+    font-size: 25px;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+/* Bottom right text */
